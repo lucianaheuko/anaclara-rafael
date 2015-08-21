@@ -1,16 +1,4 @@
-/* fonte para a data contagem regressiva*/
-@font-face {
-    font-family: 'semillaregular';
-    src: url('fonts/semilla-webfont.eot');
-    src: url('fonts/semilla-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/semilla-webfont.woff2') format('woff2'),
-         url('fonts/semilla-webfont.woff') format('woff'),
-         url('fonts/semilla-webfont.ttf') format('truetype'),
-         url('fonts/semilla-webfont.svg#semillaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 body{
 	/* fonte para os nomes 
