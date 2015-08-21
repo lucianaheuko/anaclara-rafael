@@ -1,0 +1,304 @@
+/* fonte para a data contagem regressiva*/
+@font-face {
+    font-family: 'semillaregular';
+    src: url('fonts/semilla-webfont.eot');
+    src: url('fonts/semilla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/semilla-webfont.woff2') format('woff2'),
+         url('fonts/semilla-webfont.woff') format('woff'),
+         url('fonts/semilla-webfont.ttf') format('truetype'),
+         url('fonts/semilla-webfont.svg#semillaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	/* fonte para os nomes 
+	font-family: 'Poiret One', cursive;  */
+	font-family: 'Josefin Sans', sans-serif;
+	color: #6D6A6D;
+	line-height: 1.5;
+	text-align: center;
+	background: repeat url("../img/fundo.png");
+
+}
+
+.allWidth{
+	width: 100%;
+}
+
+#menuTop{
+	position: fixed;
+	top: 0;
+	display: block;
+	height: 57px;
+	background-color: #FFF;
+	z-index: 1000;
+}
+
+.shadowBottom{
+	box-shadow: 0px 5px 10px rgba(86,83,86,0.6);
+	-moz-box-shadow: 0px 5px 10px rgba(86,83,86,0.6);
+	-webkit-box-shadow: 0px 5px 10px rgba(86,83,86,0.6);
+	-ms-box-shadow: 0px 5px 10px rgba(86,83,86,0.6);
+}
+
+.navMain{
+	padding: 7px 30px;
+	display: flex;
+	-webkit-display: flex;
+	direction:row;
+	-webkit-flex-direction:row;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+
+}
+
+.navMain a{
+	padding: 10px 0;
+	color: #6D6A6D;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a.navMainActive{
+	color: #cb9931;
+/*	background: no-repeat center 2px url("../img/bolinha.png");
+*/	background: no-repeat center 32px url("../img/bolinhas-subtitulo.png");
+	-webkit-transition: color 0.3s ease, background 0.1 ease;
+	-moz-transition: color 0.3s ease, background 0.1 ease;
+	-ms-transition: color 0.3s ease, background 0.1 ease;
+	-o-transition: color 0.3s ease, background 0.1 ease;
+	transition: color 0.3s ease, background 0.1 ease;
+}
+
+.navMain a:hover{
+	color: rgba(228, 178, 73, 0.5);
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	-ms-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+}
+
+
+.contentMain{
+	width: 90%;
+	margin: 100px auto;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: #FFF;
+}
+
+img.gg {
+	display: block;
+	clear: both;
+	margin: 0 auto;
+	width: 62px;
+	padding: 50px 0;
+}
+
+img.bolinhasH{
+	padding: 70px 0 0 0;
+}
+
+.sectionContent{
+	padding-bottom: 200px;
+}
+
+.sectionContentLast{
+	margin-bottom: 0;
+}
+
+.textContent{
+	clear: both;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.textContent a{
+	color: #077cee;
+}
+
+.textContent b, b{
+	font-weight: 700;
+}
+
+p{
+	margin-bottom: 30px;
+
+}
+
+h1{
+	font-family: 'Poiret One', cursive;
+/*	background: no-repeat center 50px url("../img/bolinhas-anaclararafael.png");
+*/	font-size: 50px;
+	padding: 120px 0 60px 0;
+	color: #cb9931;
+	width: 100%;
+}
+
+h2{
+	font-family: 'Poiret One', cursive;
+	background: no-repeat center 113px url("../img/bolinhas-subtitulo.png");
+	font-size: 30px;
+	padding: 150px 0 75px 0;
+	color: #cb9931;
+}
+
+
+
+span{
+	color: #cb9931;
+}
+
+.oquefazeremsantos{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.atracao{
+	width: 30%;
+	min-width: 200px;
+	max-width: 300px;
+	text-align: left;
+	
+}
+
+.atracao img{
+	width: 100%;
+}
+
+
+
+a.button{
+	margin: 20px 0;
+	color: #FFF;
+	background-color: #cb9931;
+	font-weight: 400;
+	padding: 10px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.layer{
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(86,83,86,0.3);
+	z-index: 1010;
+}
+
+.layerContent{
+	height: 80%;
+	width: 60%;
+	margin: 30px auto;
+	padding: 5%;
+	background-color: #fff;
+	overflow: auto;
+	-moz-box-shadow: 0px 0px 20px rgba(86,83,86,0.8);
+	-webkit-box-shadow: 0px 0px 20px rgba(86,83,86,0.8);
+	box-shadow: 0px 0px 20px rgba(86,83,86,0.8);
+}
+
+a.voltar_buton{
+	display: block;
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	right: 14%;
+	color: #FFF;
+	background-color: #cb9931;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	padding: 6px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.layerContent img{
+	clear: both;
+	width: 90%;
+	margin: 5% 0 0 0;
+	border-bottom: 3px solid #cb9931;
+
+}
+
+.layerCaption{
+	color: #cb9931;
+	margin: 10px 0 30px 0;
+
+}
+
+.layerCaption b{
+	font-weight: 700;
+}
+
+
+
+.slider{
+	margin: 60px 0;
+}
+
+
+.galeriaFotos img{
+	width: 100%;
+	filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+
+	border-bottom: 3px solid #cb9931;
+}
+
+.galeriaFotos img:hover{
+	filter: none;
+	-moz-filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+
+.galeriaFotosEach{
+	float: left;
+	width: 32%;
+	margin-right: 1.5%;
+}
+
+.galeriaFotos.twoColumn{
+	width: 70%;
+	clear: both;
+	display: block;
+	margin: 30px auto;
+}
+
+.noMargin, a.noMargin, img.noMargin{
+	margin-right: 0;
+}
+
+
+
+/************** RSVP
+**************/
+.iframeForm{
+	width: 90%;
+	height: 800px;
+	margin: 0 auto;
+}
+
+
+
+
+
