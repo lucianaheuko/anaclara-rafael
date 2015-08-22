@@ -1,10 +1,3 @@
-function getImgCapaHeight(){
-
-    var imgCapaHeight = $(".imgCapa").height();
-	$(".dateCounter").css('margin-top', - (imgCapaHeight-200)/2-200);
-    $(".capaContent").css('height', imgCapaHeight);
-}
-
 
 // function dateCounterTime(){
 //     // Set the targetDate
@@ -23,35 +16,12 @@ function getImgCapaHeight(){
 //  }
 
 
-function flexSliderPlay(){
- $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
-
-  $('#slider').flexslider({
-    animation: "slide",
-    controlNav: false,
-    animationLoop: false,
-    slideshow: false,
-    sync: "#carousel",
-    start: function(slider){
-      $('body').removeClass('loading');
-    }
-  });
-}
-
 
 function presentAction(event){
     event.preventDefault();
 
         $(".imgLayerDisplay").attr("src", imgLayer)
-        $(".layer").css("display", "block");
+        $(".layer").add("display", "block");
         
 
         //return false;
@@ -76,7 +46,6 @@ $(function() {
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('.navMain a').each(function () {
-        console.log("oi");
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
@@ -90,27 +59,15 @@ function onScroll(event){
 }
 
 
-$(window).load(function() {
-	getImgCapaHeight();
-	flexSliderPlay();
-
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-
-});
-
-$(window).resize(function() {
-	getImgCapaHeight();
-});
-
 $(document).ready(function(){
 	// dateCounterTime();
     $(document).on("scroll", onScroll);
 
-    $(".presentContentAction a.openLayer").click(function(event){
-        event.preventDefault();
+    $(".presente").click(function(event){
+        // event.preventDefault();
         
+        console.log(this);
+
         var imgLayer = $(this).find('img').attr('src');
         var spanLayer = $(this).find("span").text();
         var priceLayer = $(this).find("b").text();
