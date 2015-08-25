@@ -77,12 +77,42 @@ $(document).ready(function(){
         $(".layerCaption span").html(priceLayer);
         $(".layer").css("display", "block");
 
+        $(".darEsteAction").click( function(event){
+            $("#layerContent-1").addClass("hide");
+            $("#layerContent-3").addClass("hide");
+            $(".layerButtons-1").addClass("hide");
+            $(".layerButtons-3").addClass("hide");
+            $("#layerContent-2").removeClass("hide");
+            $(".layerButtons-2").removeClass("hide");
+
+            return false;
+
+        });
+
+        $(".enviarAction").click( function(event){
+            $("#layerContent-1").addClass("hide");
+            $("#layerContent-2").addClass("hide");
+            $(".layerButtons-1").addClass("hide");
+            $(".layerButtons-2").addClass("hide");
+            $("#layerContent-3").removeClass("hide");
+            $(".layerButtons-3").removeClass("hide");
+
+            return false;
+
+        });
+
         return false;
     });
 
     $("a.voltarAction").click(function(event){
             event.preventDefault();
             $(".layer").css("display", "none");
+            $("#layerContent-2").addClass("hide");
+            $("#layerContent-3").addClass("hide");
+            $(".layerButtons-2").addClass("hide");
+            $(".layerButtons-3").addClass("hide");
+            $("#layerContent-1").removeClass("hide");
+            $(".layerButtons-1").removeClass("hide");
             return false;
         });
 });
