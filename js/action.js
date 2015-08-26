@@ -45,11 +45,22 @@ $(function() {
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('.navMain a').each(function () {
+    $('#menuTop .navMain a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.navMain a').removeClass("navMainActive");
+            $('#menuTop .navMain a').removeClass("navMainActive");
+            currLink.addClass("navMainActive");
+        }
+        else{
+            currLink.removeClass("navMainActive");
+        }
+    });
+    $('#menuTop2 .navMain a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menuTop2 .navMain a').removeClass("navMainActive");
             currLink.addClass("navMainActive");
         }
         else{

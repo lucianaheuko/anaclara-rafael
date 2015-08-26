@@ -463,6 +463,11 @@ a.voltar_buton{
 		background: no-repeat center 28px url("../img/bolinhas-subtitulo.png");
 	}
 
+	h2{
+		padding: 130px 0 75px 0;
+		background: no-repeat center 93px url("../img/bolinhas-subtitulo.png");
+	}
+
 }
 
 /* max device width */
@@ -516,6 +521,11 @@ a.voltar_buton{
 
 	.presente{
 		text-align: center;
+	}
+
+	h2{
+		padding: 130px 0 75px 0;
+		background: no-repeat center 93px url("../img/bolinhas-subtitulo.png");
 	}
 
 }
