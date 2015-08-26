@@ -392,13 +392,28 @@
 						<div><b>Envie um cartão aos noivos!</b><br /></div>
 						
 
+<!--
 
-						<form action="http://formspree.io/luciana.heuko@fabricadeaplicativos.com.br" method="post">
-						  <input placeholder="nome" type="text">
-						  <input placeholder="e-mail" type="email" name="_replyto">
-						  <textarea name="body"></textarea>
-						  <input type="submit" value="Send">
+						
+
+						<form action="message.php" method="post">
+							<input type="text" placeholder="seu nome">
+							<input type="text" placeholder="seu telefone">
+							<input type="text" placeholder="seu e-mail">
+							<input type="text" placeholder="mensagem aos noivos">
 						</form>
+						<form action="test.php" method="post">
+						<input name="name" type="text" id="name" size="32">
+						<input name="email" type="text" id="email" size="32">
+						<textarea name="comment" cols="45" rows="6" id="comment" class="bodytext"></textarea>
+						<input type="submit" name="Submit" value="Send">
+						</form> 
+						<?php 
+						}; 
+						?>
+
+
+					-->
 
 
 
