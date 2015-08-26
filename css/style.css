@@ -24,6 +24,10 @@ body{
 	z-index: 1000;
 }
 
+#menuTop2{
+	display: none;
+}
+
 .shadowBottom{
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -259,7 +263,7 @@ a.button:hover{
 
 
 #form-presentes{
-	height: 400px;
+	height: 420px;
 	width: 60%;
 	min-width: 200px;
 	max-width: 300px;
@@ -333,8 +337,8 @@ input.button:hover{
 }
 
 .layerContent{
-/*	height: 80%;
-*/	width: 60%;
+	height: 90%;
+	width: 60%;
 	max-width: 500px;
 	min-width: 200px;
 	margin: 30px auto;
@@ -443,11 +447,78 @@ a.voltar_buton{
 }
 
 /* max device width */
-@media screen and (max-device-width: 650px) {
+@media (max-width: 650px) {
 	#menuTop{
-
-/*		background-color: #FFF;
-*/		background-color: red;
-
+		height: 47px;
 	}
+	.navMain{
+		padding: 5px 30px;
+	}
+
+	.navMain a{
+		padding: 10px 0;
+		font-size: 12px;
+	}
+	a.navMainActive{
+		background: no-repeat center 28px url("../img/bolinhas-subtitulo.png");
+	}
+
 }
+
+/* max device width */
+@media (max-width: 510px) {
+	#menuTop{
+		display:none;
+	}
+
+
+	#menuTop2{
+		position: fixed;
+		top: 0;
+		display: block;
+		height: 47px;
+		background-color: #FFF;
+		z-index: 1000;
+	}
+
+	.navMain{
+		padding: 3px 30px;
+	}
+
+	.navMain a{
+		padding: 10px 0;
+		color: #6D6A6D;
+		width: 40px;
+	}
+
+	.atracao{
+		text-align: center;
+	}
+
+	a.navMainActive{
+		background: no-repeat center 26px url("../img/bolinhas-subtitulo.png");
+	}
+
+
+	.oquefazeremsantos{
+		justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-os-justify-content: center;
+	}
+
+	.galeriaPresentes {
+		justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-os-justify-content: center;
+	}
+
+	.presente{
+		text-align: center;
+	}
+
+}
+
+
+
