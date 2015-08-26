@@ -260,7 +260,9 @@ a.button:hover{
 
 #form-presentes{
 	height: 400px;
-	width: 300px;
+	width: 60%;
+	min-width: 200px;
+	max-width: 300px;
 	margin: 20px auto 0 auto;
 
 	display: flex;
@@ -291,7 +293,7 @@ input, textarea{
 	line-height: 1.5;
 	text-align: left;
 	padding: 3px;
-	width: 290px;
+	width: 90%;
 }
 
 
@@ -334,6 +336,7 @@ input.button:hover{
 /*	height: 80%;
 */	width: 60%;
 	max-width: 500px;
+	min-width: 200px;
 	margin: 30px auto;
 	padding: 3%;
 	background-color: #fff;
@@ -439,4 +442,12 @@ a.voltar_buton{
 	margin-right: 0;
 }
 
+/* max device width */
+@media screen and (max-device-width: 650px) {
+	#menuTop{
 
+/*		background-color: #FFF;
+*/		background-color: red;
+
+	}
+}
