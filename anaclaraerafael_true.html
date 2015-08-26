@@ -393,38 +393,41 @@
 						
 
 
-						<form action="http://formspree.io/luciana.heuko@fabricadeaplicativos.com.br" method="post">
-						  <input placeholder="nome" type="text">
-						  <input placeholder="e-mail" type="email" name="_replyto">
-						  <textarea name="body"></textarea>
-						  <input type="submit" value="Send">
+						<form action="http://formspree.io/luciana.heuko@fabricadeaplicativos.com.br" method="post" id="form-presentes">
+							<div>
+								Seu nome:
+								<input type="text" name="nome">
+							</div>
+							<div>
+								Seu telefone:
+								<input type="text" name="telefone">
+							</div>
+							<div>
+								Seu e-mail:
+								<input type="email" name="email">
+							</div>
+							<div>
+								Mensagem aos noivos:
+								<textarea name="messagem"></textarea height="80px">
+							</div>
+
+							<input type="hidden" name="presente" id="presenteInputContent">
+							<input type="hidden" name="preco" id="precoInputContent">
+
+							<input type="hidden" name="_next" value="//confirmacao.html" />
+							<input type="hidden" name="_subject" value="Nova mensagem aos noivos!" />
+							<input type="hidden" name="_cc" value="lucianaheuko@gmail.com" />
+
+							<input type="submit" class="button" value="enviar mensagem">
 						</form>
 
 
-
-
-
-
-
-
 					</div>
-					<div id="layerContent-3" class="hide">
-						<div class="textContent">
-							<p><span>Mensagem enviada aos noivos com sucesso!</span></p><br />
-							<p>Por favor, realize o pagamento via transferência bancária:</p>
-							<p><b>Rafael Barreto Gatti</b><br />
-							CPF: 343.155.628-07<br />
-							Banco do Brasil<br />
-							Agência: 6816-0<br />
-							Conta: 6297-9</p>
-						</div>
-					</div>
+
 					<div class="layerButtons">
 						<a href="" class="button darEsteAction layerButtons-1">dar este presente</a>
 						<a href="" class="button voltarAction layerButtons-1">escolher outro</a>
-						<a href="" class="button enviarAction layerButtons-2 hide">enviar mensagem</a>
 						<a href="" class="button voltarAction layerButtons-2 hide">cancelar presente</a>
-						<a href="" class="button voltarAction layerButtons-3 hide">ok</a>
 					</div>
 				</div>
 			</div>

@@ -77,6 +77,7 @@ $(document).ready(function(){
         $(".layerCaption span").html(priceLayer);
         $(".layer").css("display", "block");
 
+    
         $(".darEsteAction").click( function(event){
             $("#layerContent-1").addClass("hide");
             $("#layerContent-3").addClass("hide");
@@ -89,17 +90,9 @@ $(document).ready(function(){
 
         });
 
-        $(".enviarAction").click( function(event){
-            $("#layerContent-1").addClass("hide");
-            $("#layerContent-2").addClass("hide");
-            $(".layerButtons-1").addClass("hide");
-            $(".layerButtons-2").addClass("hide");
-            $("#layerContent-3").removeClass("hide");
-            $(".layerButtons-3").removeClass("hide");
+        $("#presenteInputContent").val(spanLayer);
+        $("#precoInputContent").val(priceLayer);
 
-            return false;
-
-        });
 
         return false;
     });
